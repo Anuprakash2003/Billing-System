@@ -1,0 +1,33 @@
+<%- include("header") -%>
+
+<h3 id="login_heading">Add Billings to the list⚡</h3>
+
+<div class="login user_login container">
+    <form action="/compose" method="post">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Product Name" name="prodname">
+        <label for="name">Product Name</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="amount" placeholder="Amount" name="amount">
+        <label for="amount">Amount</label>
+      </div>
+      
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="date" placeholder="Date of Billing" name="billingDate" >
+        <label for="date">Date of Bill</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="id" placeholder="Customer Id" name="CustomerId" >
+        <label for="customerid">Customer ID</label>
+      </div>
+
+      <div class="button_save">
+        <button class="btn btn-danger btn-md" type="submit " name="buton ">
+          Save Bills!
+        </button>
+      </div>
+    </form>
+</div>
